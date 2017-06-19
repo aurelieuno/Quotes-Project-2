@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="/javascripts/scriptAJAX.js"></script>
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+
+  h1(class= 'h1') Quotes
+  h4(class= 'h4') People be creative with your quotes!
+
+  div(style='margin-left:20px;margin-top:20px')
+
+  ul(id = "ul")
+  each val in list
+    li(style="list-style-type:none") <strong>#{val.name}</strong> : #{val.quote}
+    div#remove x
+    button.btn.btn-primary#edit(type='submit') Edit
+    hr
+
+  else
+    li There are no quotes.
+
+  h4(class= 'h4') Add your quote to the list :
+  form(method='POST' action='')
+    div.form-group
+      label(for='name') Name:
+      input#name.form-control(type='text', placeholder='name (Lili)', name='name', required='true')
+
+    div.form-group
+      label(for='quote') Quote:
+      input#quote.form-control(type='text', placeholder='your quote', name='quote', rows = "2", required='true')
+
+    button.btn.btn-primary(type='submit') Submit
+    hr
+
+  h4(class= 'h4') Replace last quote posted with yours :
+  button.btn.btn-primary#update(type='submit') Submit
+
+  h4(class= 'h4') Delete last quote posted:
+  button.btn.btn-primary#delete(type='submit') Delete
+
+
+          block content

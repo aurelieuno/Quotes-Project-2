@@ -1,0 +1,26 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+     "mongodb": "^2.2.27",
+    "morgan": "~1.7.0",
+    "path": "^0.12.7",
+    "pug": "~2.0.0-beta10",
+    "serve-favicon": "~2.3.2"
+  },
+  "author": "Lili",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

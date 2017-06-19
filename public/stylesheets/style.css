@@ -1,0 +1,59 @@
+.h1 {
+  color: blue;
+}
+
+.h4 {
+  color: purple;
+}
+
+li { color: orange; }
+
+/*#ul:last-child { color: green; }*/
+
+/*li:last-child {
+    background: #ff0000;
+}*/
+
+ul li:nth-last-child(1) { color: green; }
+
+#remove{
+                position: static;
+                top: 30px;
+                right: 30px;
+                cursor: pointer;
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                border: 2px solid red;
+                border-radius: 10px;
+                font-size: 1em;
+                font-weight: bold;
+                line-height: 15px;
+                color: red;
+            }
+
+
+#remove{
+                position: sticky;
+                top: 0px;
+                left: 500px;
+                cursor: pointer;
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                border: 2px solid #d81616;
+                border-radius: 10px;
+                font-size: 1em;
+                font-weight: bold;
+                line-height: 15px;
+                color: #cc1a1a;
+            }
+
+
+            #edit{
+                position: sticky;
+                top: -10px;
+                left: 600px;
+            }
